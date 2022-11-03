@@ -1,13 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="business" lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
   </head>
+  <!-- modal -->
+  <input type="checkbox" id="my-modal" class="modal-toggle" />
+  <div class="modal">
+    <div class="modal-box">
+      <h3 class="modal-title font-bold text-lg">Test</h3>
+      <p class="py-4">
+        You've been selected for a chance to get one year of subscription to use
+        Wikipedia for free!
+      </p>
+      <div class="modal-action">
+        <label for="my-modal" class="btn">Yay!</label>
+      </div>
+    </div>
+  </div>
+  <!--  -->
   <body>
-    <div id="app"></div>
+    <nav class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a>Homepage</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-center">
+        <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+      </div>
+      <div class="navbar-end">
+        <input
+          type="text"
+          placeholder="Type here"
+          class="input input-ghost w-full max-w-xs"
+        />
+      </div>
+    </nav>
+    <section class="content">
+      <div class="list-container">
+        <div class="overflow-x-auto">
+          <table class="table w-full">
+            <!-- head -->
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Rating</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div id="map"></div>
+    </section>
     <script type="module" src="/main.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+      integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+      crossorigin=""
+    ></script>
   </body>
 </html>

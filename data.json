@@ -1,0 +1,92 @@
+[
+  {
+    "Case": 1,
+    "Name": "Colosseo Di Roma",
+    "Country": "Italy",
+    "Address": "Piazza del Colosseo, 1, 00184 Roma RM, Italy",
+    "Flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/23px-Flag_of_Italy.svg.png",
+    "Rating": 4.5,
+    "latitude": 41.89021,
+    "longitude": 12.492231
+  },
+  {
+    "Case": 2,
+    "Name": "Duomo di Milano",
+    "Country": "Italy",
+    "Address": "Piazza del Duomo, 20121 Milano MI, Italy",
+    "Flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/23px-Flag_of_Italy.svg.png",
+    "Rating": 4,
+    "latitude": 45.464211,
+    "longitude": 9.191383
+  },
+  {
+    "Case": 3,
+    "Name": "Empire State Building",
+    "Country": "USA",
+    "Address": "350 5th Ave, New York, NY 10118, USA",
+    "Flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/23px-Flag_of_the_United_States.svg.png",
+    "Rating": 4,
+    "latitude": 40.748817,
+    "longitude": -73.985428
+  },
+  {
+    "Case": 4,
+    "Name": "Burj Khalifa",
+    "Country": "United Arab Emirates",
+    "Address": "1 Sheikh Mohammed bin Rashid Blvd, Dubai 8000, United Arab Emirates",
+    "Flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/23px-Flag_of_the_United_Arab_Emirates.svg.png",
+    "Rating": 4,
+    "latitude": 25.1972,
+    "longitude": 55.2744
+  },
+  {
+    "Case": 5,
+    "Name": "Statue of Liberty",
+    "Country": "USA",
+    "Address": "New York, NY 10004, USA",
+    "Flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/23px-Flag_of_the_United_States.svg.png",
+    "Rating": 4,
+    "latitude": 40.689249,
+    "longitude": -74.0445
+  },
+  {
+    "Case": 6,
+    "Name": "Eiffel Tower",
+    "Country": "France",
+    "Address": "Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France",
+    "Flag": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/23px-Flag_of_France.svg.png",
+    "Rating": 4,
+    "latitude": 48.8584,
+    "longitude": 2.2945
+  },
+  {
+    "Case": 7,
+    "Name": "Grande Sfinge di Giza",
+    "Country": "Egypt",
+    "Address": "Giza, Cairo Governorate, Egypt",
+    "Flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/23px-Flag_of_Egypt.svg.png",
+    "Rating": 4,
+    "latitude": 29.9773,
+    "longitude": 31.1325
+  },
+  {
+    "Case": 8,
+    "Name": "Cattedrale di san Basilio",
+    "Country": "Russia",
+    "Address": "Molokovskaya St, 1, Moskva, Russia, 103132",
+    "Flag": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/23px-Flag_of_Russia.svg.png",
+    "Rating": 4,
+    "latitude": 55.7522,
+    "longitude": 37.6156
+  },
+  {
+    "Case": 9,
+    "Name": "Asakusa",
+    "Country": "Japan",
+    "Address": "Sensoji Temple, 2 Chome-3-1 Asakusa, Taito City, Tokyo 111-0032, Japan",
+    "Flag": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/23px-Flag_of_Japan.svg.png",
+    "Rating": 4,
+    "latitude": 35.7144,
+    "longitude": 139.796
+  }
+]
