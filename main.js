@@ -37,32 +37,11 @@ fetch('/data.json')
       //update the table with the data
       const row = document.createElement('tr')
       row.classList.add('listRow')
-      row.innerHTML = `<td><a class="elementName">${element.Name}</a></td><td>${element.Country}</td><td></td>`
+      row.innerHTML = `<td><a class="elementName">${element.Name}</a></td><td>${element.Country}</td><td>
+    <input type="checkbox" class="toggle toggle-xs" checked />
+      </td>`
       table.appendChild(row)
 
-      // const modalsBtn = document.querySelectorAll('.modal-btn')
-
-      // modalsBtn.forEach((btn) => {
-      //   btn.addEventListener('click', () => {
-      //     //get the relative element
-      //     const currentRow = btn.parentElement.parentElement
-      //     const index = Array.from(currentRow.parentElement.children).indexOf(
-      //       currentRow
-      //     )
-      //     const currentElement = data[index - 2]
-
-      //     const modal = document.querySelector('.modal')
-      //     modal.innerHTML = `<div class="modal-box">
-      //       <h3 class="modal-title font-bold text-lg">${currentElement.Name}</h3>
-      //       <p class="py-4">
-      //         ${currentElement.Address}
-      //       </p>
-      //       <div class="modal-action">
-      //         <label for="my-modal" class="btn">Close</label>
-      //       </div>
-      //     </div>
-      //     `
-      //   })
       const names = document.querySelectorAll('.elementName')
 
       //fly to places on click
@@ -97,11 +76,41 @@ fetch('/data.json')
       })
     })
 
+    //when the toggle is clicked, the marker is removed from the map
+    const toggles = document.querySelectorAll('.toggle')
+    toggles.forEach((toggle) => {
+      toggle.addEventListener('click', () => {
+        const currentRow = toggle.parentElement.parentElement
+        const index = Array.from(currentRow.parentElement.children).indexOf(
+          currentRow
+        )
+        const currentElement = data[index - 2]
+        if (toggle.checked) {
+          L.marker([currentElement.latitude, currentElement.longitude], {
+            icon: myIcon,
+          }).addTo(myMap)
+        } else {
+          myMap.eachLayer((layer) => {
+            if (layer._latlng) {
+              if (
+                layer._latlng.lat === currentElement.latitude &&
+                layer._latlng.lng === currentElement.longitude
+              ) {
+                myMap.removeLayer(layer)
+              }
+            }
+          })
+        }
+      })
+    })
+
     //searc input
     const searchInput = document.querySelector('#search')
+
     searchInput.addEventListener('keyup', (e) => {
       const searchValue = e.target.value.toLowerCase()
       const rows = document.querySelectorAll('.listRow')
+
       rows.forEach((row) => {
         if (row.innerText.toLowerCase().indexOf(searchValue) > -1) {
           row.style.display = ''
@@ -115,10 +124,9 @@ fetch('/data.json')
         return element.Name.toLowerCase().indexOf(searchValue) > -1
       })
 
-      console.log(searching)
-
       //when i press enter fly to the first element
-      if (e.keyCode === 13) {
+      //if the iput is empty
+      if (e.keyCode === 13 && searchValue !== '') {
         myMap.flyTo(
           [searching.latitude, searching.longitude],
           10,

@@ -11,17 +11,14 @@
       crossorigin=""
     />
   </head>
-  <!-- modal -->
-  <input type="checkbox" id="my-modal" class="modal-toggle" />
-  <div class="modal"></div>
-  <!--  -->
+
   <body>
     <nav class="navbar bg-base-100">
       <div class="navbar-start">
-        <a class="btn btn-ghost normal-case text-xl title">MapsProject</a>
+        <a class="btn btn-ghost normal-case text-xl title">Places Locator</a>
         <input
           type="text"
-          placeholder="Type here"
+          placeholder="Search here"
           class="input input-bordered w-full max-w-xs"
           id="search"
         />
@@ -60,8 +57,9 @@
         </div>
       </div>
     </nav>
+
     <section class="content">
-      <div class="list-container">
+      <div class="list-container overflow-y-auto">
         <div class="overflow-x-auto">
           <table class="table w-full">
             <!-- head -->
@@ -69,7 +67,7 @@
               <tr>
                 <th>Name</th>
                 <th>Country</th>
-                <th>Rating</th>
+                <th>ON/OFf</th>
               </tr>
             </thead>
             <tbody></tbody>

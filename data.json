@@ -41,7 +41,7 @@
   },
   {
     "Case": 5,
-    "Name": "Statue of Liberty",
+    "Name": "Statua della Libertà",
     "Country": "USA",
     "Address": "New York, NY 10004, USA",
     "Flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/23px-Flag_of_the_United_States.svg.png",
@@ -51,7 +51,7 @@
   },
   {
     "Case": 6,
-    "Name": "Eiffel Tower",
+    "Name": "Torre Eiffel",
     "Country": "France",
     "Address": "Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France",
     "Flag": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/23px-Flag_of_France.svg.png",
@@ -88,5 +88,75 @@
     "Rating": 4,
     "latitude": 35.7144,
     "longitude": 139.796
+  },
+  {
+    "Case": 10,
+    "Name": "Taj Mahal",
+    "Country": "India",
+    "Address": "Dharmapuri, Forest Colony, Tajganj, Agra, Uttar Pradesh 282001, India",
+    "Flag": "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/23px-Flag_of_India.svg.png",
+    "Rating": 4,
+    "latitude": 27.175,
+    "longitude": 78.0422
+  },
+  {
+    "Case": 11,
+    "Name": "Machu Picchu",
+    "Country": "Peru",
+    "Address": "Machu Picchu, Peru",
+    "Flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/23px-Flag_of_Peru.svg.png",
+    "Rating": 4,
+    "latitude": -13.1631,
+    "longitude": -72.545
+  },
+  {
+    "Case": 12,
+    "Name": "Chichen Itza",
+    "Country": "Mexico",
+    "Address": "Chichen Itza, Yucatán, Mexico",
+    "Flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/23px-Flag_of_Mexico.svg.png",
+    "Rating": 4,
+    "latitude": 20.6822,
+    "longitude": -88.5686
+  },
+  {
+    "Case": "13",
+    "Name": "Cascate del Niagara",
+    "Country": "Canada",
+    "Address": "Niagara Falls, ON L2G, Canada",
+    "Flag": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Flag_of_Canada.svg/23px-Flag_of_Canada.svg.png",
+    "Rating": 4,
+    "latitude": 43.0896,
+    "longitude": -79.0849
+  },
+  {
+    "Case": "14",
+    "Name": "Barriere di Corallina",
+    "Country": "Australia",
+    "Address": "Great Barrier Reef, Queensland, Australia",
+    "Flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/23px-Flag_of_Australia_%28converted%29.svg.png",
+    "Rating": 4,
+    "latitude": -16.9253,
+    "longitude": 145.7781
+  },
+  {
+    "Case": "15",
+    "Name": "Monte Rushmore",
+    "Country": "USA",
+    "Address": "Mount Rushmore National Memorial, Keystone, SD 57751, USA",
+    "Flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/23px-Flag_of_the_United_States.svg.png",
+    "Rating": 4,
+    "latitude": 43.8791,
+    "longitude": -103.4591
+  },
+  {
+    "Case": "15",
+    "Name": "Grand Kanyon",
+    "Country": "USA",
+    "Address": "Grand Canyon National Park, Arizona 86023, USA",
+    "Flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/23px-Flag_of_the_United_States.svg.png",
+    "Rating": 4,
+    "latitude": 36.1069,
+    "longitude": -112.112
   }
 ]
