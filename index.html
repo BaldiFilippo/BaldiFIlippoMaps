@@ -13,23 +13,22 @@
   </head>
   <!-- modal -->
   <input type="checkbox" id="my-modal" class="modal-toggle" />
-  <div class="modal">
-    <div class="modal-box">
-      <h3 class="modal-title font-bold text-lg">Test</h3>
-      <p class="py-4">
-        You've been selected for a chance to get one year of subscription to use
-        Wikipedia for free!
-      </p>
-      <div class="modal-action">
-        <label for="my-modal" class="btn">Yay!</label>
-      </div>
-    </div>
-  </div>
+  <div class="modal"></div>
   <!--  -->
   <body>
     <nav class="navbar bg-base-100">
       <div class="navbar-start">
-        <div class="dropdown">
+        <a class="btn btn-ghost normal-case text-xl title">MapsProject</a>
+        <input
+          type="text"
+          placeholder="Type here"
+          class="input input-bordered w-full max-w-xs"
+          id="search"
+        />
+      </div>
+      <div class="navbar-center"></div>
+      <div class="navbar-end">
+        <div class="dropdown dropdown-left">
           <label tabindex="0" class="btn btn-ghost btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -50,21 +49,15 @@
             tabindex="0"
             class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li><a>Homepage</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>About</a></li>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="https://www.kaggle.com/">Datasets</a></li>
+            <li>
+              <a href="https://github.com/BaldiFilippo/BaldiFIlippoMaps"
+                >GitHub</a
+              >
+            </li>
           </ul>
         </div>
-      </div>
-      <div class="navbar-center">
-        <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-      </div>
-      <div class="navbar-end">
-        <input
-          type="text"
-          placeholder="Type here"
-          class="input input-ghost w-full max-w-xs"
-        />
       </div>
     </nav>
     <section class="content">

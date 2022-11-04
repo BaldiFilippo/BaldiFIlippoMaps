@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+a {
+  cursor: pointer;
+}
+
 .list-container {
   width: 40%;
   height: 100vh;
@@ -24,13 +28,14 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  overflow: hidden;
 }
 
 .content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
 }
 
 svg {
